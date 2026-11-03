@@ -1,1 +1,136 @@
 @charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    font-family: var(--font-principal);
+}
+
+:root {
+    --azul-petroleo: #172B3A;
+    --caramelo: #D9A56C;
+    --off-white: #F3EFE7;
+    --verde-salvia: #A8B5A2;
+    --grafite: #343638;
+
+    --font-principal: 'Montserrat', sans-serif;
+
+    --texto-sm: 0.875rem;
+    --texto-base: 1rem;
+    --texto-lg: 1.25rem;
+    --titulo-h3: 1.5rem;
+    --titulo-h2: 2rem;
+    --titulo-h1: 2.75rem;
+
+    --espaco-1: 0.5rem;
+    --espaco-2: 1rem;
+    --espaco-3: 1.5rem;
+    --espaco-4: 3rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background-color: var(--azul-petroleo);
+    
+}
+
+.navbar-brand img,
+.btn-tema img {
+    width: 30px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.btn-tema {
+    color: var(--off-white);
+    padding: 0.35rem 0.6rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: var(--off-white);
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus-visible {
+    color: var(--caramelo);
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-decoration-thickness: 2px;
+}
+
+.navbar-brand img, .btn-tema img {
+    filter: invert(1);
+}
+
+.btn-tema:hover,
+.btn-tema:focus-visible {
+    color: var(--azul-petroleo);
+}
+
+.hero-btn-primario {
+    background: var(--azul-petroleo);
+    padding: 10px 20px;
+    color: var(--off-white);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero-btn-primario:hover,
+.hero-btn-primario:focus-visible {
+    background: var(--caramelo);
+    color: var(--azul-petroleo);
+}
+
+.hero-btn-secundario {
+    background: var(--caramelo);
+    padding: 10px 20px;
+    color: var(--azul-petroleo);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero-btn-secundario:hover,
+.hero-btn-secundario:focus-visible {
+    background: var(--azul-petroleo);
+    color: var(--off-white);
+}
+
+.section-text h1, .section-text p {
+    color: var(--azul-petroleo);
+}
+
+.card-dado {
+    background-color: var(--off-white);
+    border: 1px solid var(--verde-salvia);
+    border-radius: 15px;
+}
+
+.porcento {
+    font-size: var(--titulo-h1);
+    font-weight: bold;
+    color: var(--azul-petroleo);
+}
+
+.card-icone {
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    margin-bottom: var(--espaco-2);
+    background-color: var(--verde-salvia);
+    border-radius: 15px;
+}
+
+.card-fonte {
+    color: var(--grafite);
+}
