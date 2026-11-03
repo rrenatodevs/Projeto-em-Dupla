@@ -117,8 +117,67 @@
         </div>
       </div>
     </section>
-</main>
+    <!-- SEÇÃO DO SIMULADOR / TESTE INTERATIVO -->
+<section id="simulador" class="mb-5 py-4 border-top pt-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <div class="card card-dado p-4 shadow-sm border-0">
+        <div class="card-body">
+          <span class="badge mb-2 px-3 py-2">Recurso Interativo</span>
+          <h2 class="fw-bold mb-3">Teste de Percepção: O seu Diagnóstico Remoto</h2>
+          <p class="text-muted mb-4">Responda a estas 3 perguntas rápidas para avaliar o equilíbrio entre a sua autonomia e o risco de isolamento digital.</p>
+          
+          <form id="quiz-form">
+            <!-- Pergunta 1 -->
+            <div class="mb-4">
+              <label class="form-label fw-bold">1. Com que frequência interage presencialmente com colegas ou amigos durante a semana de trabalho?</label>
+              <select class="form-select" id="p1" required>
+                <option value="" selected disabled>Escolha uma opção...</option>
+                <option value="3">Quase todos os dias (Trabalho híbrido / Encontros frequentes)</option>
+                <option value="2">1 a 2 vezes por semana</option>
+                <option value="1">Raramente ou nunca (100% isolado em casa)</option>
+              </select>
+            </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+            <!-- Pergunta 2 -->
+            <div class="mb-4">
+              <label class="form-label fw-bold">2. Sente que a diferença de fuso horário ou o trabalho assíncrono prejudica a sua vida interpessoal?</label>
+              <select class="form-select" id="p2" required>
+                <option value="" selected disabled>Escolha uma opção...</option>
+                <option value="3">Não, consigo separar bem o trabalho da vida pessoal.</option>
+                <option value="2">Às vezes sinto dificuldade em desligar das notificações.</option>
+                <option value="1">Sim, sinto-me constantemente ligado e desconectado da minha rotina local.</option>
+              </select>
+            </div>
+
+            <!-- Pergunta 3 -->
+            <div class="mb-4">
+              <label class="form-label fw-bold">3. Quando precisa de ajuda técnica ou desabafo profissional, a quem recorre?</label>
+              <select class="form-select" id="p3" required>
+                <option value="" selected disabled>Escolha uma opção...</option>
+                <option value="3">A uma rede sólida de mentores, amigos e colegas.</option>
+                <option value="2">A comunidades online ou fóruns de tecnologia.</option>
+                <option value="1">Apenas à Inteligência Artificial / Tento resolver tudo sozinho.</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn hero-btn-primario w-100 py-2 mt-2">Calcular Diagnóstico</button>
+          </form>
+
+          <!-- Resultado (inicialmente escondido) -->
+          <div id="resultado-container" class="mt-4 p-4 rounded-3 d-none">
+            <h3 class="h4 fw-bold" id="resultado-titulo"></h3>
+            <p id="resultado-texto" class="mb-0"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Chamada do seu script do simulador -->
+    <script src="js/app.js"></script>
 </body>
+</html>
 </html>
