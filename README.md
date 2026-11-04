@@ -53,9 +53,13 @@ A lógica da autoavaliação processa os dados de entrada do usuário através d
 
 {
   "pontuacaoTotal": "number (intervalo de 3 a 9)",
+  
   "categorias": {
+  
     "saudavel": { "min": 8, "classe": "resultado-bom", "titulo": "Equilíbrio saudável 🌱" },
+    
     "alerta": { "min": 5, "classe": "resultado-medio", "titulo": "Alerta de isolamento médio ⚠️" },
+    
     "risco": { "min": 0, "classe": "resultado-risco", "titulo": "Perfil: expatriado de sofá em risco 🚨" }
   }
 }
@@ -65,8 +69,11 @@ Dataset de Visualização de Dados (Chart.js)
 
 {
   "labels": ["100% Remoto", "Híbrido", "Presencial"],
+  
   "metric": "Percentual de trabalhadores que relatam solidão diária",
+
   "data": [25, 21, 16],
+  
   "source": "Gallup (2024)"
 }
 
