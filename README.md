@@ -1,63 +1,26 @@
-# [Seu Nome Completo]
-> Estudante de [Nome do Curso - ex: Ciência da Computação]
----
-### 📫 Contato & Redes Sociais
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-
-badge&logo=linkedin&logoColor=white)](LINK_DO_SEU_LINKEDIN)
-[![E-mail](https://img.shields.io/badge/Email-D14836?style=for-the-badge
-&logo=gmail&logoColor=white)](mailto:seu-email-profissional@email.com)
-[![Currículo](https://img.shields.io/badge/Currículo-000000?style=for-th
-e-badge&logo=read-the-docs&logoColor=white)](LINK_DO_PDF_OU_SITE)
----
-### 󰞵 Sobre
-Atualmente cursando o [Xº] período de [Nome do Curso] na [Nome da
-Instituição]. Sou apaixonado por resolver problemas através da
-tecnologia e possuo foco em [Área de Interesse - ex: Desenvolvimento
-Backend / Análise de Dados].
-* **Habilidades Técnicas:** [Ex: Python, Java, SQL, AWS, Docker].
-* **Habilidades Socioemocionais:** Trabalho em equipe, comunicação
-assertiva e pensamento crítico.
-* **Experiência/Projetos Relevantes:** Atuei em [Projeto de Iniciação
-Científica/Estágio] onde desenvolvi [resultado principal].
----
-### 🛠 Minhas Ferramentas Favoritas
-#### 💻 Linguagens e Tecnologias
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge
-&logo=python&logoColor=ffdd54)
-![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-ba
-dge&logo=openjdk&logoColor=white)
-#### 🗄 Banco de Dados
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-t
-he-badge&logo=postgresql&logoColor=white)
-#### 🤖 Inteligência Artificial & Ciência de Dados
-![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-th
-e-badge&logo=pandas&logoColor=white)
-![Scikit-Learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg
-?style=for-the-badge&logo=scikit-learn&logoColor=white)
----
-### 📂 Portfólio de Projetos
-#### 󰳕 Desenvolvimento Front-End para Web
-| Projeto | Descrição | Link |
-| :--- | :--- | :---: |
-| **Site Básico em HTML5** | Criação de site básico com 5 páginas em
-HTML5. | [Ver Projeto](./AT1-Paginas-HTML/) |
-| **Deploy de Site** | Publicação de site no github pages. | [Ver
-Projeto](./AT2-Deploy-de-Site/) |
-| **Calculadora de IMC** | Desenvolvimento de uma calculadora de IMC com
-JavaScript. | [Ver Projeto](./AT3-Calculadora-IMC/) |
-| **Site com Bootstrap** | Aplicação do Bootstrap para o desenvolvimento
-de um site com múltiplas páginas. | [Ver
-Projeto](./AT4-Site-Multi-Paginas-Bootstrap/) |
-| **Desenvolvimento com IA** | Copilotando o desenvolvimento front-end
-com IA. | [Ver Projeto](./AT5-Front-End-Copilotado-com-IA/) |
-#### 🗃 Modelagem de Banco de Dados
-| Projeto | Descrição | Link |
-| :--- | :--- | :---: |
-| **Nome do projeto** | Documento de Requisitos, Modelagem ER e Scripts
-SQL. | [Ver Projeto](./projeto-banco-dados/) |
----
-### 🏗 Estrutura do Repositório
-Abaixo, a organização deste repositório para facilitar a navegação:
-- `root/`: Arquivo de apresentação principal.
-- `/projeto-nome/`: Pasta contendo o código-fonte, documentação e o
-README específico do projeto acadêmico.
+Expatriados de Sofá: A Solidão e o Trabalho Remoto InternacionalAtividade Prática Avaliativa: Front-End & Copilotagem com IATema Central: O Futuro do Trabalho e as Características Socioemocionais da Geração AtualDocente Responsável: Prof. Diego Marques de CarvalhoCurso: Análise e Desenvolvimento de Sistemas (ADS)📌 1. Visão Geral e Proposta do ProjetoO Expatriados de Sofá é uma plataforma web informativa e interativa desenvolvida para investigar o impacto psicológico e socioemocional do trabalho remoto internacional em jovens desenvolvedores brasileiros (Geração Z).Embora o modelo de trabalho assíncrono e transfronteiriço traga atrativos como remuneração em moeda forte (dólar/euro) e flexibilidade geográfica, ele também impõe custos silenciosos: a perda de ancoragem comunitária, a dissolução das fronteiras entre vida pessoal e profissional (culture always-on) e a exposição a índices elevados de solidão digital.🔗 Deploy e ProduçãoLive Demo (GitHub Pages): https://rrenatodevs.github.io/Projeto-em-Dupla/ (substitua pela URL final do seu deploy)📂 2. Estrutura de Arquivos e DiretóriosProjeto-em-Dupla/
+├── index.html            # Página inicial (Hero, Dados Estatísticos, Quiz e Gráfico)
+├── transparencia.html    # Detalhamento de fontes, metodologia e limites dos dados
+├── contato.html          # Formulário acadêmico e perfis dos desenvolvedores
+├── css/
+│   └── style.css         # Design System autoral (Variáveis, Grid, Dark Mode)
+├── js/
+│   └── app.js            # Lógica JS Vanilla (Chart.js, Quiz, LocalStorage, DOM)
+├── img/                  # Assets visuais e ícones da aplicação
+├── AUDITORIA_IA.md       # Dossiê crítico de copilotagem e engenharia de prompts
+└── README.md             # Documentação técnica oficial do repositório
+🛠️ 3. Arquitetura de Software e Contratos de DadosA aplicação segue uma arquitetura SPA parcial com páginas estáticas interligadas, desacoplando rigorosamente a camada de estrutura (HTML5 Semântico), estilização (CSS3 autoral com variáveis no :root) e comportamento dinâmico (JavaScript Vanilla).Esquema de Dados do Quiz (Simulador de Sobrecarga Cognitiva)A lógica da autoavaliação processa os dados de entrada do usuário através de um objeto estático de diagnósticos:{
+  "pontuacaoTotal": "number (intervalo de 3 a 9)",
+  "categorias": {
+    "saudavel": { "min": 8, "classe": "resultado-bom", "titulo": "Equilíbrio saudável 🌱" },
+    "alerta": { "min": 5, "classe": "resultado-medio", "titulo": "Alerta de isolamento médio ⚠️" },
+    "risco": { "min": 0, "classe": "resultado-risco", "titulo": "Perfil: expatriado de sofá em risco 🚨" }
+  }
+}
+Dataset de Visualização de Dados (Chart.js){
+  "labels": ["100% Remoto", "Híbrido", "Presencial"],
+  "metric": "Percentual de trabalhadores que relatam solidão diária",
+  "data": [25, 21, 16],
+  "source": "Gallup (2024)"
+}
+📦 4. Declaração de Dependências e CDNA aplicação consome apenas dependências consolidadas via CDN para garantir rápida taxa de carregamento (LCP) e suporte cross-browser:DependênciaVersão / CDNJustificativa TécnicaBootstrapv5.0.2 (CSS & JS Bundle)Sistema de layout responsivo (grid 12 colunas) e acessibilidade de menus colapsáveis.Chart.jsv4.4.3 (UMD)Biblioteca leve e responsiva para renderização de gráficos dinâmicos via <canvas>.Google FontsMontserrat (400, 500, 600, 700, 800)Padronização tipográfica limpa para legibilidade e identidade visual moderna.🤝 5. Matriz de Colaboração e Commits SemânticosO desenvolvimento foi distribuído equitativamente entre os dois colaboradores, utilizando o padrão Conventional Commits:feat: para inclusão de novas páginas, componentes interativos e gráficos.style: para estilização de temas, design system CSS e ajustes responsivos.fix: para correções de bugs em JavaScript ou validações de acessibilidade.docs: para atualização do README.md e do logbook AUDITORIA_IA.md.Tabela de Divisão de ResponsabilidadesContribuidorMódulo / Escopo PrincipalRenato (@rrenatodevs)Arquitetura HTML5, Design System (style.css), integração do Bootstrap e Dark Mode.[Nome do Integrante]Desenvolvimento da lógica em JavaScript (app.js), integrações com Chart.js e documentação.📚 6. Referências BibliográficasGallup (2024). State of the Global Workplace Report 2024. Disponível em: gallup.com.Organização Mundial da Saúde - OMS (2025). Commission on Social Connection. Disponível em: who.int.Buffer (2023). State of Remote Work 2023. Disponível em: buffer.com.Husky / Diário do Comércio (2024). Perfil do Trabalhador Remoto Brasileiro para o Exterior. Disponível em: diariodocomercio.com.br.
