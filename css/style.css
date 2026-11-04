@@ -2,7 +2,6 @@
 
 * {
     box-sizing: border-box;
-    font-family: var(--font-principal);
 }
 
 :root {
@@ -25,15 +24,49 @@
     --espaco-2: 1rem;
     --espaco-3: 1.5rem;
     --espaco-4: 3rem;
+
+    --raio: 15px;
+
+    --cor-fundo: #FBFAF6;
+    --cor-texto: var(--grafite);
+    --cor-titulo: var(--azul-petroleo);
+    --cor-card: var(--off-white);
+    --cor-apoio: #4A4D50;
 }
 
-html {
-    scroll-behavior: smooth;
+html.dark-mode {
+    --cor-fundo: #1a1a1a;
+    --cor-texto: #f8f9fa;
+    --cor-titulo: var(--off-white);
+    --cor-card: #2b2b2b;
+    --cor-apoio: #adb5bd;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
 }
 
 body {
-    background-color: var(--off-white);
-    color: var(--grafite);
+    font-family: var(--font-principal);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+main h1,
+main h2,
+main h3 {
+    color: var(--cor-titulo);
+}
+
+.section-text p {
+    color: var(--cor-titulo);
+}
+
+.texto-apoio {
+    color: var(--cor-apoio);
 }
 
 .navbar {
@@ -54,14 +87,19 @@ body {
     border-radius: 5px;
     color: var(--off-white);
     padding: 0.35rem 0.6rem;
-    transition: all 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-tema:hover,
+.btn-tema:focus-visible {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .navbar .navbar-nav .nav-link {
     color: var(--off-white);
     font-size: 1.2rem;
     font-weight: 500;
-    transition: all 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
 }
 
 .navbar .navbar-nav .nav-link:hover,
@@ -72,9 +110,15 @@ body {
     text-decoration-thickness: 2px;
 }
 
-.btn-tema:hover,
-.btn-tema:focus-visible {
-    background-color: rgba(255, 255, 255, 0.1);
+.badge {
+    background-color: var(--verde-salvia);
+    color: var(--azul-petroleo);
+    font-weight: 600;
+}
+
+.hero-img {
+    border-radius: var(--raio);
+    box-shadow: 0 6px 20px rgba(23, 43, 58, 0.12);
 }
 
 .hero-btn-primario {
@@ -109,20 +153,17 @@ body {
     color: var(--off-white);
 }
 
-.section-text h1, .section-text p {
-    color: var(--azul-petroleo);
-}
-
 .card-dado {
-    background-color: var(--off-white);
-    border: 1px solid var(--verde-salvia);
-    border-radius: 15px;
+    background-color: var(--cor-card);
+    color: var(--cor-texto);
+    border-radius: var(--raio);
+    transition: background-color 0.3s ease;
 }
 
 .porcento {
     font-size: var(--titulo-h1);
     font-weight: bold;
-    color: var(--azul-petroleo);
+    color: var(--cor-titulo);
 }
 
 .card-icone {
@@ -132,35 +173,72 @@ body {
     padding: 5px;
     margin-bottom: var(--espaco-2);
     background-color: var(--verde-salvia);
-    border-radius: 15px;
+    border-radius: var(--raio);
 }
 
 .card-fonte {
-    color: var(--grafite);
+    color: var(--cor-apoio);
 }
 
-/* ==========================================
-   MODO ESCURO (DARK MODE)
-   ========================================== */
-body.dark-mode {
-    background-color: #1a1a1a !important;
-    color: #f8f9fa !important;
+.grafico-box {
+    position: relative;
+    width: 100%;
+    height: 300px;
 }
 
-body.dark-mode .card-dado,
-body.dark-mode .card {
-    background-color: #2b2b2b !important;
-    border-color: #444 !important;
-    color: #ffffff !important;
+#resultado-container h3 {
+    color: inherit;
 }
 
-body.dark-mode .text-muted,
-body.dark-mode .card-fonte {
-    color: #adb5bd !important;
+.resultado-bom {
+    background-color: var(--verde-salvia);
+    color: var(--azul-petroleo);
 }
 
-body.dark-mode .section-text h1, 
-body.dark-mode .section-text p,
-body.dark-mode .porcento {
-    color: var(--off-white) !important;
+.resultado-medio {
+    background-color: var(--caramelo);
+    color: var(--azul-petroleo);
+}
+
+.resultado-risco {
+    background-color: var(--azul-petroleo);
+    color: var(--off-white);
+    border: 1px solid var(--verde-salvia);
+}
+
+:root {
+    --cor-link: #0A58CA;
+    --cor-borda: rgba(0, 0, 0, 0.15);
+}
+
+html.dark-mode {
+    --cor-link: #8BB9FE;
+    --cor-borda: rgba(255, 255, 255, 0.2);
+}
+
+.link-fonte {
+    color: var(--cor-link);
+}
+
+code {
+    color: var(--cor-titulo);
+}
+
+.tabela-fontes {
+    color: var(--cor-texto);
+    border-color: var(--cor-borda);
+}
+
+.table-responsive {
+    position: relative;
+}
+
+.aviso-demo {
+    background-color: var(--verde-salvia);
+    color: var(--azul-petroleo);
+    font-weight: 500;
+}
+
+html.dark-mode .hero-btn-primario {
+    border: 1px solid var(--verde-salvia);
 }
