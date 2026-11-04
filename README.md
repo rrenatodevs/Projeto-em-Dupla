@@ -16,7 +16,7 @@ Embora o modelo de trabalho assíncrono e transfronteiriço traga atrativos como
 
 🔗 Deploy e Produção
 
-Live Demo (GitHub Pages): https://rrenatodevs.github.io/Projeto-em-Dupla/ (substitua pela URL final do seu deploy)
+Live Demo (GitHub Pages): https://rrenatodevs.github.io/Projeto-em-Dupla/
 
 📂 2. Estrutura de Arquivos e Diretórios
 
@@ -109,9 +109,9 @@ Módulo / Escopo Principal
 
 Renato (@rrenatodevs)
 
-Arquitetura HTML5, Design System (style.css), integração do Bootstrap e Dark Mode.
+Arquitetura HTML5, Design System (style.css), integração do Bootstrap.
 
-[Nome do Integrante]
+Alexsander (@alexsander1997ribeiro)
 
 Desenvolvimento da lógica em JavaScript (app.js), integrações com Chart.js e documentação.
 
