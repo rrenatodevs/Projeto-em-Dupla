@@ -21,6 +21,7 @@ Live Demo (GitHub Pages): https://rrenatodevs.github.io/Projeto-em-Dupla/
 📂 2. Estrutura de Arquivos e Diretórios
 
 Projeto-em-Dupla/
+
 ├── index.html # Página inicial (Hero, Dados Estatísticos, Quiz e Gráfico)
 
 ├── transparencia.html    # Detalhamento de fontes, metodologia e limites dos dados
