@@ -21,15 +21,24 @@ Live Demo (GitHub Pages): https://rrenatodevs.github.io/Projeto-em-Dupla/
 📂 2. Estrutura de Arquivos e Diretórios
 
 Projeto-em-Dupla/
-├── index.html            # Página inicial (Hero, Dados Estatísticos, Quiz e Gráfico)
+├── index.html # Página inicial (Hero, Dados Estatísticos, Quiz e Gráfico)
+
 ├── transparencia.html    # Detalhamento de fontes, metodologia e limites dos dados
+
 ├── contato.html          # Formulário acadêmico e perfis dos desenvolvedores
+
 ├── css/
+
 │   └── style.css         # Design System autoral (Variáveis, Grid, Dark Mode)
+
 ├── js/
+
 │   └── app.js            # Lógica JS Vanilla (Chart.js, Quiz, LocalStorage, DOM)
+
 ├── img/                  # Assets visuais e ícones da aplicação
+
 ├── AUDITORIA_IA.md       # Dossiê crítico de copilotagem e engenharia de prompts
+
 └── README.md             # Documentação técnica oficial do repositório
 
 
